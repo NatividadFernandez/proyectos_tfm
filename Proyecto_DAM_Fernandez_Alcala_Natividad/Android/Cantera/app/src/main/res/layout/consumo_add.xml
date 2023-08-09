@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:text="Añadir Consumo"
+            android:textColor="#000"
+            android:fontFamily="@font/roboto_medium_italic"></TextView>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1sp"
+        android:background="@color/btn" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:paddingBottom="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fecha y Hora"
+                android:textStyle="bold"
+                android:paddingBottom="5sp"
+                android:textSize="14sp"
+                android:fontFamily="@font/roboto"></TextView>
+
+            <EditText
+                android:paddingLeft="8dp"
+                android:id="@+id/add_fecha_recepcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:fontFamily="@font/roboto"
+                android:hint="10-10-10 11:00"
+                android:textColor="#000"
+                android:paddingBottom="5sp"
+                android:inputType="number"></EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:paddingBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="12sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gasoleo"
+                    android:textStyle="bold"
+                    android:paddingBottom="5sp"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/roboto"></TextView>
+
+                <EditText
+                    android:id="@+id/add_gasoleo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/roboto"
+                    android:hint="20"
+                    android:textColor="#000"
+                    android:paddingBottom="5sp"
+                    android:inputType="numberDecimal"></EditText>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aceite Motor"
+                    android:textStyle="bold"
+                    android:paddingBottom="5sp"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/roboto"></TextView>
+
+                <EditText
+                    android:id="@+id/add_aceite_motor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/roboto"
+                    android:hint="50"
+                    android:textColor="#000"
+                    android:paddingBottom="5sp"
+                    android:inputType="numberDecimal"></EditText>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:paddingBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="12sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aceite Hidráulico"
+                    android:textStyle="bold"
+                    android:paddingBottom="5sp"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/roboto"></TextView>
+
+                <EditText
+                    android:id="@+id/add_aceite_hidraulico"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/roboto"
+                    android:hint="20"
+                    android:textColor="#000"
+                    android:paddingBottom="5sp"
+                    android:inputType="numberDecimal"></EditText>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aceite Transmisiones"
+                    android:textStyle="bold"
+                    android:paddingBottom="5sp"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/roboto"></TextView>
+
+                <EditText
+                    android:id="@+id/add_aceite_transmisiones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/roboto"
+                    android:hint="80"
+                    android:textColor="#000"
+                    android:paddingBottom="5sp"
+                    android:inputType="numberDecimal"></EditText>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:paddingBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="12sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Valvulina"
+                    android:textStyle="bold"
+                    android:paddingBottom="5sp"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/roboto"></TextView>
+
+                <EditText
+                    android:id="@+id/add_valvulina"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/roboto"
+                    android:hint="10000"
+                    android:textColor="#000"
+                    android:paddingBottom="5sp"
+                    android:inputType="numberDecimal"></EditText>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Grasas"
+                    android:textStyle="bold"
+                    android:paddingBottom="5sp"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/roboto"></TextView>
+
+                <EditText
+                    android:id="@+id/add_grasas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/roboto"
+                    android:hint="16000"
+                    android:textColor="#000"
+                    android:paddingBottom="5sp"
+                    android:inputType="numberDecimal"></EditText>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:paddingBottom="15dp"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginRight="12sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Id consumo"
+                    android:textStyle="bold"
+                    android:paddingBottom="5sp"></TextView>
+
+                <TextView
+                    android:id="@+id/add_id_consumo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="id consumo"
+                    android:textColor="#000"
+                    android:paddingBottom="5sp"></TextView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1sp"
+                    android:background="#c1c9bf" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="id empleado"
+                    android:textStyle="bold"
+                    android:paddingBottom="5sp"></TextView>
+
+                <TextView
+                    android:id="@+id/add_consumo_id_empleado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="id empleado"
+                    android:textColor="#000"
+                    android:paddingBottom="5sp"></TextView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1sp"
+                    android:background="#c1c9bf" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

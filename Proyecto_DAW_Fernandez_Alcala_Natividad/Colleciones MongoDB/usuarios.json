@@ -1,0 +1,29 @@
+[{
+  "_id": {
+    "$oid": "628b45de84f6f0f725dccae0"
+  },
+  "nombre": "Next",
+  "apellido": "next",
+  "email": "next@gmail.com",
+  "password": "$2a$10$CyXhjqGReiN3SWXfcgylju4PPHuk0gdltz3bSlVM1WZW.FpTXDPQm",
+  "creado": {
+    "$date": {
+      "$numberLong": "1653291475569"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62ab680f4623f70cfdd09621"
+  },
+  "nombre": "Nati",
+  "apellido": "Fernández",
+  "email": "nati@gmail.com",
+  "password": "$2a$10$wdVUEMC7kCCWXtc8KeHUMudMcReqOX..oUagUddpNzUR0vBbF1HJy",
+  "creado": {
+    "$date": {
+      "$numberLong": "1655398829688"
+    }
+  },
+  "__v": 0
+}]

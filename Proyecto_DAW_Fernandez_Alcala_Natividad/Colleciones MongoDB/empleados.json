@@ -1,0 +1,55 @@
+[{
+  "_id": {
+    "$oid": "62abb92dfe7987fc8f38a785"
+  },
+  "nombre": "Juan",
+  "apellido": "Pérez",
+  "nif": "85469257P",
+  "telefono": 123454689,
+  "email": "juan@gmail.com",
+  "empresa": {
+    "$oid": "62a7c00021559c5cba364601"
+  },
+  "creado": {
+    "$date": {
+      "$numberLong": "1655406678808"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62ae264c7b2c0f6497cfb191"
+  },
+  "nombre": "Sara",
+  "apellido": "López",
+  "nif": "58896447S",
+  "telefono": 123456789,
+  "email": "sara@gmail.com",
+  "empresa": {
+    "$oid": "62a7c00021559c5cba364601"
+  },
+  "creado": {
+    "$date": {
+      "$numberLong": "1655580130767"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62b297e8d5ac25e031fcefa6"
+  },
+  "nombre": "José Miguel",
+  "apellido": "Belmonte Rodríguez",
+  "nif": "27516185C",
+  "telefono": 665213847,
+  "email": "josemiguel.belmonte@aluvisagrupo.com",
+  "empresa": {
+    "$oid": "62b0e72f3fe3aa63933e6941"
+  },
+  "creado": {
+    "$date": {
+      "$numberLong": "1655816184634"
+    }
+  },
+  "__v": 0
+}]

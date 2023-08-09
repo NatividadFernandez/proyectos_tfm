@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="1">
+
+        <TextView
+            android:paddingLeft="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:text="Cambiar Contraseña"
+            android:textColor="#000"
+            android:fontFamily="@font/roboto_medium_italic"></TextView>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1sp"
+        android:background="@color/btn" />
+
+    <LinearLayout
+        android:paddingTop="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:paddingBottom="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Actual Contraseña"
+                android:textStyle="bold"
+                android:paddingBottom="5sp"
+                android:textSize="14sp"
+                android:fontFamily="@font/roboto"></TextView>
+
+            <EditText
+                android:paddingLeft="8dp"
+                android:id="@+id/actual_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:fontFamily="@font/roboto"
+                android:textColor="#000"
+                android:paddingBottom="5sp"
+                android:inputType="textPassword"></EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:paddingBottom="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nueva Contraseña "
+                android:textStyle="bold"
+                android:paddingBottom="5sp"
+                android:textSize="14sp"
+                android:fontFamily="@font/roboto"></TextView>
+
+            <EditText
+                android:paddingLeft="8dp"
+                android:id="@+id/new_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:fontFamily="@font/roboto"
+                android:textColor="#000"
+                android:paddingBottom="5sp"
+                android:inputType="textPassword"></EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:paddingBottom="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Verificar Contraseña"
+                android:textStyle="bold"
+                android:paddingBottom="5sp"
+                android:textSize="14sp"
+                android:fontFamily="@font/roboto"></TextView>
+
+            <EditText
+                android:paddingLeft="8dp"
+                android:id="@+id/verificar_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:fontFamily="@font/roboto"
+                android:textColor="#000"
+                android:paddingBottom="5sp"
+                android:inputType="textPassword"></EditText>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

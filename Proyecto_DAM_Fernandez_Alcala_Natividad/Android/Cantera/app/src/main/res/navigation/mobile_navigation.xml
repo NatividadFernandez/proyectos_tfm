@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/principalFragment">
+
+    <fragment
+        android:id="@+id/voladurasListFragment"
+        android:name="com.pms.cantera.voladura.VoladurasListFragment"
+        android:label="Voladuras"
+        tools:layout="@layout/fragment_voladuras_list">
+        <action
+            android:id="@+id/action_voladurasListFragment_self"
+            app:destination="@id/voladurasListFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/principalFragment"
+        android:name="com.pms.cantera.PrincipalFragment"
+        android:label="Inicio"
+        tools:layout="@layout/fragment_principal" >
+        <action
+            android:id="@+id/action_principalFragment_to_voladurasListFragment"
+            app:destination="@id/voladurasListFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+        <action
+            android:id="@+id/action_principalFragment_to_menuProductosFragment"
+            app:destination="@id/menuProductosFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+        <action
+            android:id="@+id/action_principalFragment_to_menuConsumosFragment"
+            app:destination="@id/menuConsumosFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+        <action
+            android:id="@+id/action_principalFragment_to_registro_Entradas_Salidas"
+            app:destination="@id/registro_Entradas_Salidas"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuProductosFragment"
+        android:name="com.pms.cantera.productos.MenuProductosFragment"
+        android:label="Productos"
+        tools:layout="@layout/fragment_menu_productos" >
+        <action
+            android:id="@+id/action_menuProductosFragment_to_productosListFragment"
+            app:destination="@id/productosListFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_menuProductosFragment_to_stockProductosListFragment"
+            app:destination="@id/stockProductosListFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/productosListFragment"
+        android:name="com.pms.cantera.productos.ProductosListFragment"
+        android:label="Productos"
+        tools:layout="@layout/fragment_productos_list" >
+        <action
+            android:id="@+id/action_productosListFragment_self"
+            app:destination="@id/productosListFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/stockProductosListFragment"
+        android:name="com.pms.cantera.productos.stockproductos.StockProductosListFragment"
+        android:label="Stock Productos"
+        tools:layout="@layout/fragment_stock_productos_list" >
+        <action
+            android:id="@+id/action_stockProductosListFragment_self"
+            app:destination="@id/stockProductosListFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuConsumosFragment"
+        android:name="com.pms.cantera.consumos.MenuConsumosFragment"
+        android:label="Consumos"
+        tools:layout="@layout/fragment_menu_consumos" >
+        <action
+            android:id="@+id/action_menuConsumosFragment_to_consumosListFragment"
+            app:destination="@id/consumosListFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_menuConsumosFragment_to_stockConsumosList"
+            app:destination="@id/stockConsumosList"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/consumosListFragment"
+        android:name="com.pms.cantera.consumos.ConsumosListFragment"
+        android:label="Consumos"
+        tools:layout="@layout/fragment_consumos_list" >
+        <action
+            android:id="@+id/action_consumosListFragment_self"
+            app:destination="@id/consumosListFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/stockConsumosList"
+        android:name="com.pms.cantera.consumos.stockconsumos.StockConsumosListFragment"
+        android:label="Stock Consumos"
+        tools:layout="@layout/fragment_stock_consumos_list" >
+        <action
+            android:id="@+id/action_stockConsumosList_self"
+            app:destination="@id/stockConsumosList"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/registro_Entradas_Salidas"
+        android:name="com.pms.cantera.registro.Registro_Entradas_Salidas"
+        android:label="Control Horario"
+        tools:layout="@layout/fragment_registro__entradas__salidas" >
+        <action
+            android:id="@+id/action_registro_Entradas_Salidas_self"
+            app:destination="@id/registro_Entradas_Salidas" />
+    </fragment>
+    <fragment
+        android:id="@+id/configuracionFragment"
+        android:name="com.pms.cantera.configuracion.ConfiguracionFragment"
+        android:label="Configuración"
+        tools:layout="@layout/fragment_configuracion" >
+        <action
+            android:id="@+id/action_configuracionFragment_self"
+            app:destination="@id/configuracionFragment" />
+    </fragment>
+
+
+</navigation>

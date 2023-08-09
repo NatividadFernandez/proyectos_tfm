@@ -1,0 +1,151 @@
+[{
+  "_id": {
+    "$oid": "62a7c00021559c5cba364601"
+  },
+  "nombre": "MarTec",
+  "cif": "W77775666",
+  "representante": "Sofia Pérez",
+  "nif": "12354896D",
+  "telefono": 658974895,
+  "direccion": "Calle San Sebastián nº5",
+  "ciclos": [
+    {
+      "id": "62a79bbb0eb6bf83a253df92",
+      "nombreCorto": "DAW",
+      "nombreLargo": "Desarrollo de Aplicaciones Web"
+    },
+    {
+      "id": "62a7a23b373ddc448f419d40",
+      "nombreCorto": "DAM",
+      "nombreLargo": "Desarrollo de Aplicaciones Multiplataforma"
+    }
+  ],
+  "creado": {
+    "$date": {
+      "$numberLong": "1655160715218"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62a7e713fdc42447e25c725a"
+  },
+  "nombre": "Globomatic",
+  "cif": "C83375666",
+  "representante": "Juan Martínez",
+  "nif": "99999999R",
+  "telefono": 685596632,
+  "direccion": "carretera López",
+  "ciclos": [
+    {
+      "id": "62a79bbb0eb6bf83a253df92",
+      "nombreCorto": "DAW",
+      "nombreLargo": "Desarrollo de Aplicaciones Web"
+    }
+  ],
+  "creado": {
+    "$date": {
+      "$numberLong": "1655170743801"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62a7e756fdc42447e25c725e"
+  },
+  "nombre": "ValleTech",
+  "cif": "B83375575",
+  "representante": "Silvia Teruel",
+  "nif": "65004204V",
+  "telefono": 785469225,
+  "direccion": "Calle del Mar Nº8",
+  "ciclos": [
+    {
+      "id": "62a8ae38dd5bb8068e156290",
+      "nombreCorto": "ASIR",
+      "nombreLargo": "Administración de Sistemas Informáticos en Red"
+    },
+    {
+      "id": "62a7a23b373ddc448f419d40",
+      "nombreCorto": "DAM",
+      "nombreLargo": "Desarrollo de Aplicaciones Multiplataforma"
+    },
+    {
+      "id": "62a79bbb0eb6bf83a253df92",
+      "nombreCorto": "DAW",
+      "nombreLargo": "Desarrollo de Aplicaciones Web"
+    }
+  ],
+  "creado": {
+    "$date": {
+      "$numberLong": "1655170743801"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62b088f454081d45f41e747d"
+  },
+  "nombre": "InfoAlm",
+  "cif": "P55375575",
+  "representante": "pepe Rubio",
+  "nif": "03562923Q",
+  "telefono": 669582231,
+  "direccion": "calle Rafael nº9",
+  "ciclos": [
+    {
+      "id": "62a79bbb0eb6bf83a253df92",
+      "nombreCorto": "DAW",
+      "nombreLargo": "Desarrollo de Aplicaciones Web"
+    },
+    {
+      "id": "62a7a23b373ddc448f419d40",
+      "nombreCorto": "DAM",
+      "nombreLargo": "Desarrollo de Aplicaciones Multiplataforma"
+    },
+    {
+      "id": "62a8ae38dd5bb8068e156290",
+      "nombreCorto": "ASIR",
+      "nombreLargo": "Administración de Sistemas Informáticos en Red"
+    }
+  ],
+  "creado": {
+    "$date": {
+      "$numberLong": "1655736451294"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62b0e72f3fe3aa63933e6941"
+  },
+  "nombre": "Aluvisa",
+  "cif": "G83375579",
+  "representante": "Eloy Manuel Fernández",
+  "nif": "44280861L",
+  "telefono": 648905856,
+  "direccion": "Calle Benitagla nº8",
+  "ciclos": [
+    {
+      "id": "62a79bbb0eb6bf83a253df92",
+      "nombreCorto": "DAW",
+      "nombreLargo": "Desarrollo de Aplicaciones Web"
+    },
+    {
+      "id": "62a7a23b373ddc448f419d40",
+      "nombreCorto": "DAM",
+      "nombreLargo": "Desarrollo de Aplicaciones Multiplataforma"
+    },
+    {
+      "id": "62a8ae38dd5bb8068e156290",
+      "nombreCorto": "ASIR",
+      "nombreLargo": "Administración de Sistemas Informáticos en Red"
+    }
+  ],
+  "creado": {
+    "$date": {
+      "$numberLong": "1655760440759"
+    }
+  },
+  "__v": 0
+}]

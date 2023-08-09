@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".configuracion.ConfiguracionFragment"
+
+    android:background="@drawable/login2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:paddingBottom="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:maxHeight="100dp"
+                    android:src="@drawable/obrero"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#ffff"
+            android:elevation="25dp"
+            android:padding="20dp"
+            android:layout_margin="30dp"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Datos del Usuario"
+                android:textSize="30dp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:fontFamily="@font/roboto_medium"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Podrás actualizar tus datos"
+                android:textStyle="bold"
+                android:textColor="#272727"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/roboto"
+                android:paddingBottom="5dp"/>
+
+            <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1sp"
+                        android:background="#c1c9bf" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_margin="8dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="15dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Nombre del Usuario"
+                        android:textStyle="bold"
+                        android:paddingBottom="5sp"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/roboto"></TextView>
+
+                    <TextView
+                        android:id="@+id/nombre_usuario"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:fontFamily="@font/roboto"
+                        android:hint="nombre"
+                        android:textColor="#000"
+                        android:paddingBottom="5sp"
+                        android:paddingLeft="5dp"></TextView>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1sp"
+                        android:background="#c1c9bf" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Email"
+                        android:textStyle="bold"
+                        android:paddingBottom="5sp"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/roboto"></TextView>
+
+                    <TextView
+                        android:id="@+id/email_usuario"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:fontFamily="@font/roboto"
+                        android:hint="email"
+                        android:textColor="#000"
+                        android:paddingLeft="5dp"
+                        android:paddingBottom="5sp"></TextView>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1sp"
+                        android:background="#c1c9bf" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/change_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cambiar Contraseña"
+                        android:textColor="#ffff"
+                        android:backgroundTint="#ffcc4d34"
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Button">
+                    </com.google.android.material.button.MaterialButton>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="1">
+
+        <TextView
+            android:paddingLeft="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:text="Añadir Producto"
+            android:textColor="#000"
+            android:fontFamily="@font/roboto_medium_italic"></TextView>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1sp"
+        android:background="@color/btn" />
+
+    <LinearLayout
+        android:paddingTop="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:paddingBottom="15dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Selecciona una Fecha"
+                app:startIconDrawable="@drawable/ic_calendar">
+
+
+                <AutoCompleteTextView
+                    android:id="@+id/add_voladura_fecha"
+                    android:focusable="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:inputType="none"
+                    android:textColor="#000"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:paddingTop="20dp"
+            android:paddingBottom="15dp">
+
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Arena 06"
+                    android:textStyle="bold"
+                    android:paddingBottom="5sp"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/roboto"></TextView>
+
+                <EditText
+                    android:id="@+id/add_arena_06"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/roboto"
+                    android:hint="60"
+                    android:textColor="#000"
+                    android:paddingBottom="5sp"
+                    android:inputType="numberDecimal"></EditText>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Grava 612"
+                    android:textStyle="bold"
+                    android:paddingBottom="5sp"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/roboto"></TextView>
+
+                <EditText
+                    android:id="@+id/add_grava_612"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/roboto"
+                    android:hint="120"
+                    android:textColor="#000"
+                    android:paddingBottom="5sp"
+                    android:inputType="numberDecimal"></EditText>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Grava 1220"
+                    android:textStyle="bold"
+                    android:paddingBottom="5sp"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/roboto"></TextView>
+
+                <EditText
+                    android:id="@+id/add_grava_1220"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/roboto"
+                    android:hint="100"
+                    android:textColor="#000"
+                    android:paddingBottom="5sp"
+                    android:inputType="numberDecimal"></EditText>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:paddingTop="20dp"
+            android:paddingBottom="15dp">
+
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Grava 2023"
+                    android:textStyle="bold"
+                    android:paddingBottom="5sp"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/roboto"></TextView>
+
+                <EditText
+                    android:id="@+id/add_grava_2023"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/roboto"
+                    android:hint="40"
+                    android:textColor="#000"
+                    android:paddingBottom="5sp"
+                    android:inputType="numberDecimal"></EditText>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rechazo"
+                    android:textStyle="bold"
+                    android:paddingBottom="5sp"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/roboto"></TextView>
+
+                <EditText
+                    android:id="@+id/add_rechazo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/roboto"
+                    android:hint="200"
+                    android:textColor="#000"
+                    android:paddingBottom="5sp"
+                    android:inputType="numberDecimal"></EditText>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Zahorra"
+                    android:textStyle="bold"
+                    android:paddingBottom="5sp"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/roboto"></TextView>
+
+                <EditText
+                    android:id="@+id/add_zahorra"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/roboto"
+                    android:hint="2500"
+                    android:textColor="#000"
+                    android:paddingBottom="5sp"
+                    android:focusableInTouchMode="false"
+                    android:inputType="numberDecimal"></EditText>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:paddingTop="20dp"
+            android:paddingBottom="15dp">
+
+            <LinearLayout
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="12sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Escollera"
+                    android:textStyle="bold"
+                    android:paddingBottom="5sp"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/roboto"></TextView>
+
+                <EditText
+                    android:id="@+id/add_escollera"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/roboto"
+                    android:hint="301"
+                    android:textColor="#000"
+                    android:paddingBottom="5sp"
+                    android:inputType="numberDecimal"></EditText>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mampostería"
+                    android:textStyle="bold"
+                    android:paddingBottom="5sp"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/roboto"></TextView>
+
+                <EditText
+                    android:id="@+id/add_mamposteria"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/roboto"
+                    android:hint="1000"
+                    android:textColor="#000"
+                    android:paddingBottom="5sp"
+                    android:inputType="numberDecimal"></EditText>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:paddingBottom="15dp"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginRight="12sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Id producto"
+                    android:textStyle="bold"
+                    android:paddingBottom="5sp"></TextView>
+
+                <TextView
+                    android:id="@+id/add_id_producto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="id producto"
+                    android:textColor="#000"
+                    android:paddingBottom="5sp"></TextView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1sp"
+                    android:background="#c1c9bf" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="id empleado"
+                    android:textStyle="bold"
+                    android:paddingBottom="5sp"></TextView>
+
+                <TextView
+                    android:id="@+id/add_producto_id_empleado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="id empleado"
+                    android:textColor="#000"
+                    android:paddingBottom="5sp"></TextView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1sp"
+                    android:background="#c1c9bf" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

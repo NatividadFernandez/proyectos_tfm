@@ -1,0 +1,40 @@
+#btn-mas{
+    display: none;
+}
+.containeer{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+.btn-mas .btnFlotante {
+    cursor: pointer;
+    background: #2360ff;/*   7cccd5  f44141 */
+    font-size: 23px;
+    display: block;
+    text-decoration: none;
+    /* background: #cc2b2b; */
+    color: #fff;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.4);
+    transition: all 500ms ease;
+}
+
+/* .btn-mas .btnFlotante{
+    cursor: pointer;
+    background: #f44141;
+    font-size: 23px;
+} */
+.btnFlotante:hover{
+    background: #2360ff;
+    color: #fff;
+    text-decoration: none;
+    transform: scale(1.1) !important;
+    border-color: rgba(0, 0, 0, 0.1);
+    font-size: 28px;
+    /* background: #fff;
+    color: #cc2b2b; */
+}

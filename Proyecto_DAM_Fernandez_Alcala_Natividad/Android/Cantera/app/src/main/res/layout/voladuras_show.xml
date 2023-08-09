@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="1">
+
+        <TextView
+            android:paddingLeft="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:text="Ficha Voladura"
+            android:textColor="#000"
+            android:fontFamily="@font/roboto_medium_italic"></TextView>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1sp"
+        android:background="@color/btn" />
+
+    <LinearLayout
+        android:paddingTop="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:paddingBottom="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fecha y Hora"
+                android:textStyle="bold"
+                android:paddingBottom="5sp"
+                android:textSize="14sp"
+                android:fontFamily="@font/roboto"></TextView>
+
+            <TextView
+                android:paddingLeft="8dp"
+                android:id="@+id/show_fecha_voladura"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:fontFamily="@font/roboto"
+                android:hint="fecha"
+                android:textColor="#000"
+                android:paddingBottom="5sp"></TextView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1sp"
+                android:background="#c1c9bf" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:paddingBottom="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Localización"
+                android:textStyle="bold"
+                android:paddingBottom="5sp"
+                android:textSize="14sp"
+                android:fontFamily="@font/roboto"></TextView>
+
+            <TextView
+                android:id="@+id/show_localizacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:fontFamily="@font/roboto"
+                android:hint="localizacion"
+                android:paddingLeft="8dp"
+                android:textColor="#000"
+                android:paddingBottom="5sp"></TextView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1sp"
+                android:background="#c1c9bf" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:paddingBottom="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Malla perforación"
+                android:textStyle="bold"
+                android:paddingBottom="5sp"
+                android:textSize="14sp"
+                android:fontFamily="@font/roboto"></TextView>
+
+            <TextView
+                android:id="@+id/show_malla_perforacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:fontFamily="@font/roboto"
+                android:hint="perforacion"
+                android:paddingLeft="8dp"
+                android:textColor="#000"
+                android:paddingBottom="5sp"></TextView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1sp"
+                android:background="#c1c9bf" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:paddingBottom="15dp">
+
+            <LinearLayout
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginRight="12sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Superficie m2"
+                    android:textStyle="bold"
+                    android:paddingBottom="5sp"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/roboto"></TextView>
+
+                <TextView
+                    android:id="@+id/show_m2_superficie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/roboto"
+                    android:hint="superficie"
+                    android:textColor="#000"
+                    android:gravity="center"
+                    android:paddingBottom="5sp"></TextView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1sp"
+                    android:background="#c1c9bf" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Profundidad Barrenos"
+                    android:textStyle="bold"
+                    android:paddingBottom="5sp"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/roboto"></TextView>
+
+                <TextView
+                    android:id="@+id/show_profundidad_barrenos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/roboto"
+                    android:hint="profundidad"
+                    android:textColor="#000"
+                    android:gravity="center"
+                    android:paddingBottom="5sp"></TextView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1sp"
+                    android:background="#c1c9bf" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:paddingBottom="15dp">
+
+            <LinearLayout
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginRight="12sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Número Barrenos"
+                    android:textStyle="bold"
+                    android:paddingBottom="5sp"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/roboto"></TextView>
+
+                <TextView
+                    android:id="@+id/show_numero_barrenos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/roboto"
+                    android:hint="numero bar"
+                    android:textColor="#000"
+                    android:gravity="center"
+                    android:paddingBottom="5sp"></TextView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1sp"
+                    android:background="#c1c9bf" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kg. Explosivo"
+                    android:textStyle="bold"
+                    android:paddingBottom="5sp"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/roboto"></TextView>
+
+                <TextView
+                    android:id="@+id/show_kg_explosivo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/roboto"
+                    android:hint="profundidad"
+                    android:textColor="#000"
+                    android:gravity="center"
+                    android:paddingBottom="5sp"></TextView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1sp"
+                    android:background="#c1c9bf" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:paddingBottom="15dp">
+
+            <LinearLayout
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginRight="12sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Precio €"
+                    android:textStyle="bold"
+                    android:paddingBottom="5sp"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/roboto"></TextView>
+
+                <TextView
+                    android:id="@+id/show_precio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/roboto"
+                    android:hint="precio"
+                    android:textColor="#000"
+                    android:gravity="center"
+                    android:paddingBottom="5sp"></TextView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1sp"
+                    android:background="#c1c9bf" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Piedra Bruta"
+                    android:textStyle="bold"
+                    android:paddingBottom="5sp"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/roboto"></TextView>
+
+                <TextView
+                    android:id="@+id/show_piedra_bruta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/roboto"
+                    android:hint="piedra"
+                    android:textColor="#000"
+                    android:gravity="center"
+                    android:paddingBottom="5sp"></TextView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1sp"
+                    android:background="#c1c9bf" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:paddingBottom="15dp"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginRight="12sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Id voladura"
+                    android:textStyle="bold"
+                    android:paddingBottom="5sp"></TextView>
+
+                <TextView
+                    android:id="@+id/show_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="id voladura"
+                    android:textColor="#000"
+                    android:paddingBottom="5sp"></TextView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1sp"
+                    android:background="#c1c9bf" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="id empleado"
+                    android:textStyle="bold"
+                    android:paddingBottom="5sp"></TextView>
+
+                <TextView
+                    android:id="@+id/show_id_empleado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="id empleado"
+                    android:textColor="#000"
+                    android:paddingBottom="5sp"></TextView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1sp"
+                    android:background="#c1c9bf" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

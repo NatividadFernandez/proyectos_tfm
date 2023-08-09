@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/principalFragment"
+            android:icon="@drawable/casaa"
+            android:title="Inicio" />
+        <item
+            android:id="@+id/registro_Entradas_Salidas"
+            android:icon="@drawable/codigo"
+            android:title="Control Horario" />
+
+        <item
+            android:id="@+id/voladurasListFragment"
+            android:icon="@drawable/bombaa"
+            android:title="Voladuras" />
+
+        <item
+            android:id="@+id/menuProductosFragment"
+            android:icon="@drawable/camioon"
+            android:title="Productos" />
+
+        <item
+            android:id="@+id/menuConsumosFragment"
+            android:icon="@drawable/consumo"
+            android:title="Consumos" />
+
+        <item android:title="Sesión">
+            <menu>
+                <item
+                    android:id="@+id/configuracionFragment"
+                    android:icon="@drawable/config"
+                    android:title="Configuración" />
+                <item
+                    android:id="@+id/logout"
+                    android:icon="@drawable/ic_undo"
+                    android:title="Cerrar Sesión" />
+            </menu>
+        </item>
+    </group>
+</menu>

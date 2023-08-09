@@ -1,0 +1,37 @@
+[{
+  "_id": {
+    "$oid": "62a79bbb0eb6bf83a253df92"
+  },
+  "nombreCorto": "DAW",
+  "nombreLargo": "Desarrollo de Aplicaciones Web",
+  "creado": {
+    "$date": {
+      "$numberLong": "1655151544548"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62a7a23b373ddc448f419d40"
+  },
+  "nombreCorto": "DAM",
+  "nombreLargo": "Desarrollo de Aplicaciones Multiplataforma",
+  "creado": {
+    "$date": {
+      "$numberLong": "1655153165947"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62a8ae38dd5bb8068e156290"
+  },
+  "nombreCorto": "ASIR",
+  "nombreLargo": "Administración de Sistemas Informáticos en Red",
+  "creado": {
+    "$date": {
+      "$numberLong": "1655217936395"
+    }
+  },
+  "__v": 0
+}]

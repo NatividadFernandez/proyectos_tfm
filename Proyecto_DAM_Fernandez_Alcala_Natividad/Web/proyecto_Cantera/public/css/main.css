@@ -1,0 +1,186 @@
+/*SECTION HEADER*/
+.header {
+    background-image: url(../img/cantera10.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.img-logo {
+    width: 50px;
+}
+
+.linear-white::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.vh-50 { /*50*/
+    height: 50vmin;
+}
+
+/*SECTION EXPERIENCE*/
+.card-img-filter{
+    filter: brightness(0.5);
+}
+
+.card {
+    transition-duration: 0.6s;
+    clip-path: polygon(
+        50% 0,
+        100% 0,
+        100% 50%,
+        100% 100%,
+        50% 100%,
+        0 100%,
+        0 50%,
+        0 0
+    );
+}
+
+.card-effect:hover .card {
+    clip-path: polygon(
+        50% 0,
+        50% 0,
+        100% 50%,
+        100% 50%,
+        50% 100%,
+        50% 100%,
+        0 50%,
+        0 50%
+    );
+}
+
+.card-img-overlay {
+    transition-duration: 0.6s;
+}
+
+.card-effect:hover .card-img-overlay {
+    transform:scale(0.9);
+}
+
+/* SECTION COMMENTS*/
+
+.comments{
+    background-image: url(../img/cantera4.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.comments.linear-white::after {
+    top: 0;
+}
+
+.commets_img {
+    --tamano: 80px;
+    width: var(--tamano);
+    height: var(--tamano);
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0 / 0.5);
+    border: 3px ridge #fff;
+}
+
+.transform-turn {
+    transform: rotate(0.5turn);
+}
+
+/*SECTION INSPIRATION*/
+
+.media-object-img {
+    --tamano: 65px;
+    width: var(--tamano);
+    height: var(--tamano);
+    margin-right: 15px;
+}
+
+/*CAROUSEL*/
+
+.carousel-weston-middle {
+    top: 35%;
+}
+
+/*SCROLL*/
+html {
+    scroll-behavior: smooth;
+}
+
+/*BTN UP*/
+#button-up {
+    width: 60px;
+    height: 60px;
+    /* background-color: #46a2fd; */
+    background-color: #ffc107;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 50%;
+    font-size: 20px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 300ms ease;
+    transform: scale(0);
+}
+
+#button-up:hover {
+    transform: scale(1.1) !important;
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+/* MEDIA QUERIES*/
+@media (max-width: 500px) {
+    .vh-50 { 
+        height: 60vmax;
+    }
+}
+@media (max-width: 375px) {
+    .vh-50 { 
+        height: 80vmax;
+    }
+}
+
+@media (max-width: 450px) {
+    .vh-50 { 
+        height: 55vmax;
+    }
+}
+
+
+.cambioMenu {
+    text-shadow: 0.1rem 0.1rem 0.2rem black;
+    /* color:black !important; */
+    font-size: 1rem;
+    font-weight: 500;
+    /* letter-spacing: .3rem */
+}
+
+.cambio2 {
+    color: white;
+    text-shadow: 0.1rem 0.1rem 0.8rem black;
+    font-size: 1.3rem;
+    font-weight: 600;
+    /* letter-spacing: .3rem */
+}
+.cambio3 {
+    color: white;
+    text-shadow: 0.1rem 0.1rem 0.8rem rgb(48, 44, 44);
+    font-size: 1.3rem;
+    font-weight: 600;
+    /* letter-spacing: .3rem */
+}
+
+.cambio {
+    text-shadow: 0.1rem 0.1rem 0.8rem rgb(48, 44, 44);
+}
+

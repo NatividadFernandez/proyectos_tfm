@@ -1,0 +1,214 @@
+.content-calendario {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #252422;
+}
+
+.fondoC {
+    background-color: /* #fffbf0 */ #fff !important;
+    border-radius: 15px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+#calendar {
+    /* max-width: 990px; */
+    margin: 40px auto;
+    /* color: #252422; */
+}
+
+#calendar .fc-scrollgrid-sync-table tr {
+    /* height: 154px; */
+    height: 100px;
+}
+
+#calendar table {
+   border-color:transparent !important ; 
+   /* border-collapse: none; */
+}
+
+ .fc-daygrid-day-number {
+   /*  text-align: left; */
+ }
+
+ .table-bordered thead th/*,  .table-bordered thead td */ {
+    border-bottom-width: thin !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-top: none !important;
+
+ }
+
+ .fc button {
+    border-radius: 20px;
+    box-sizing: border-box;
+    border-width: 2px;
+    background-color: transparent;
+    font-size: /* 12px*/ 14px;
+    font-weight: 500;
+    padding: 7px 20px;
+    border-color: #66615B;
+    color: #66615B;
+    -webkit-transition: all 150ms linear;
+    -moz-transition: all 150ms linear;
+    -o-transition: all 150ms linear;
+    -ms-transition: all 150ms linear;
+    transition: all 150ms linear;
+}
+
+.fc-toolbar button {
+    position: relative;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {    
+    background-color: #66615B !important;
+    color: rgba(255, 255, 255, 0.85) !important;
+    border-color: #66615B !important;
+}
+
+#calendar button:focus {
+    color: rgba(255, 255, 255, 0.85) !important;
+    background-color: #66615B !important;
+    border-color: #66615B !important;
+    box-shadow: 0 0 0 0.2rem #cccccc;
+}
+
+
+.btn-primary:hover {
+    color: rgba(255, 255, 255, 0.85) !important;
+    background-color: #66615B !important;
+    border-color: #66615B !important;
+}
+
+.btn-primary.disabled, .btn-primary:disabled {
+    background-color: #E3E3E3;
+    border-color: #E3E3E3;
+    cursor: default;
+    opacity: 0.65;
+    filter: alpha(opacity=65);
+    color: #66615b;
+}
+
+.fc .fc-daygrid-day.fc-day-today {
+    background-color: #F5F5F5 !important;
+}
+
+#exampleModal .form-group {
+    padding-top: 0px !important;
+    padding-bottom: 0px!important;
+    text-align: left;
+    color: black;
+}
+
+.tamano {
+    padding: 0%;
+    width: 20%;
+}
+.contenedorCalendario {
+    margin: 0 auto;
+    padding-bottom: 8%;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 2%;
+}
+
+/************************************************RESPONSIVE****************************************************/
+
+@media (max-width: 575px) {
+    .fc .fc-toolbar.fc-header-toolbar {        
+        padding-top: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+    .fc button{padding: .375rem .75rem;}
+
+    .tamano {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+
+    .fc .fc-toolbar-title {          
+        font-size: 24px;
+    }
+
+    .contenedorCalendario {
+        margin: 0 auto;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 5px;
+    }
+
+    .fondoC {
+        margin-top: 30px;
+    }
+
+    /* .fc .fc-toolbar-title {
+    text-align: center;
+    } */
+
+    /* .fc-toolbar-chunk {
+        text-align: center;
+    } */    
+
+    /* .fc-toolbar-chunk :nth-child(3n) {
+    text-align: center;
+    } */
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    
+    .fc .fc-toolbar.fc-header-toolbar {        
+        padding-top: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+    .fc button{padding: .375rem .75rem;}
+
+    .fc .fc-toolbar-title {          
+        font-size: 24px;
+    }
+
+    .fc-toolbar-chunk {
+        padding: 0px;
+    }
+    
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .fc .fc-toolbar.fc-header-toolbar {        
+        padding-top: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+    .fc button{padding: .375rem .75rem;}
+
+    .fc .fc-toolbar-title {          
+        font-size: 24px;
+    }
+    
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .fc .fc-toolbar.fc-header-toolbar {        
+        padding-top: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+    .fc button{padding: .375rem .75rem;}
+}
+
+@media (min-width: 1200px) {
+
+    h3.heading {
+        font-size: 3rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 1.9rem;
+      }
+    
+}
